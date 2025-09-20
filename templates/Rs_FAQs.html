@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | Dr. Rashmi Sinha's Clinic</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Quick answers to common patient queries.</p>
+  </header>
+
+  <section class="content faq-container">
+    <div class="faq-item">
+      <p class="faq-question">🕒 What are the clinic's working hours?</p>
+      <p class="faq-answer">Our clinic is open Monday to Sunday, 8 AM – 8 PM.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question">📞 How can I book an appointment?</p>
+      <p class="faq-answer">You can book by calling us at +91 80021 47890. In future we will also have a form in the webpage itself.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question">💊 Do I need to bring previous reports?</p>
+      <p class="faq-answer">Yes, bringing past medical reports and prescriptions helps us give you better care.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-question">💳 What payment methods are accepted?</p>
+      <p class="faq-answer">We accept cash, UPI, and most digital wallets.</p>
+    </div>
+  </section>
+
+  <a href="/templates/Rs_homepage.html" class="btn" style="text-align: center;">Back to home</a>
+
+  <footer>
+    <p>&copy; 2025 Dr. Rashmi Sinha's Clinic | All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918002147890?text=Hello%20Dr.%20Rashmi%20Sinha%2C%20I%20would%20like%20to%20book%20an%20appointment." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <a href="tel:8002147890" 
+   class="call-float" 
+   aria-label="Call Dr. Rashmi Sinha’s Clinic">
+  📞
+</a>
+
+<button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆</button>
+
+<script>
+  // Show button when user scrolls down
+  window.onscroll = function() {
+    let btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+
+</body>
+</html>

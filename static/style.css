@@ -1,0 +1,443 @@
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/rashmi_sinha.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Content Section */
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  min-width: 250px;
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.achievements img {
+  max-width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.achievements p {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Footer */
+footer p {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Hero - Homepage */
+.home-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/static/clinic_banner.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #0096c7;
+}
+.btn.secondary {
+  background: #48cae4;
+}
+.btn.secondary:hover {
+  background: #00b4d8;
+}
+
+/* About Preview Section */
+.about-preview {
+  text-align: center;
+  padding: 40px 20px;
+  background: #e9f5f8;
+  margin: 50px 0;
+  border-radius: 20px;
+}
+.about-preview p {
+  max-width: 600px;
+  margin: 15px auto;
+  font-size: 1.1rem;
+}
+
+img {
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+/* Contact Page */
+.contact-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/static/contact_banner.jpg") center/cover no-repeat;
+  padding: 100px 20px;
+}
+.contact-details {
+  background: #f8f9fa;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-details a {
+  color: #0077b6;
+  text-decoration: none;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Appointment Page */
+.appointment-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/static/appointment_banner.jpg") center/cover no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+.appointment-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.appointment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.appointment-form input,
+.appointment-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.appointment-form button {
+  width: 100%;
+  padding: 12px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.appointment-form button:hover {
+  background: #023e8a;
+}
+
+/* FAQ Page Styles with Hover Animation */
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.faq-item:hover .faq-question {
+  transform: translateX(-10px);
+  background-color: #eaeaea;
+}
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transform: translateX(30px);
+  transition: all 0.4s ease;
+  color: #444;
+  line-height: 1.4em;
+}
+.faq-item:hover .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateX(0);
+  padding-top: 8px;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  z-index: 1000;
+  animation: pulseBounce 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-float:hover {
+  animation: none;
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+}
+
+/* Floating Call Button */
+.call-float {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #0077b6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.call-float:hover {
+  transform: scale(1.1) rotate(-10deg);
+  box-shadow: 0 6px 16px rgba(0, 119, 182, 0.6);
+}
+
+/* Floating Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#backToTop:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(68, 68, 68, 0.6);
+}
+
+/* Animation for WhatsApp pulse */
+@keyframes pulseBounce {
+  0%,
+  100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(-4px);
+  }
+}
+
+/* --- Gallery Page --- */
+.gallery-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/static/gallery_banner.jpg") center/cover no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Appointment Confirmation Styles --- */
+.confirmation-card {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #e6ffed;
+  border: 2px solid #38a169;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease;
+}
+
+.confirmation-card h2 {
+  color: #2f855a;
+  margin-bottom: 15px;
+}
+
+.confirmation-card p {
+  font-size: 1.1rem;
+  color: #22543d;
+}
+
+.checkmark {
+  font-size: 50px;
+  color: #38a169;
+  animation: pop 0.6s ease forwards;
+  margin-bottom: 10px;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reviews-cards p {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  font-display: fallback;
+}
+
+.reviewscards {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  min-width: 250px;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter p {
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+  animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

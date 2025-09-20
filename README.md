@@ -2,9 +2,10 @@
 <br>
 This is a private repo for Dr. Rashmi Sinha's clinic in Dhanbad.
 <br>
-<p>The main developer and the website development starter is the creator</p>
+<p>The main developer and the website development starter is the creator of this repo</p>
+<p>His real name is Divit Chakravorty</p>
 <br>
-Thi is file is written by the creator itself
+This is a file is written by the creator itself
 <br>
 <h1><b>Instructions:-</b></h1>
 <p>1) The contents and the files of this repo should not leave this repo</p>

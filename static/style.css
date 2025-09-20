@@ -441,3 +441,25 @@ img {
     border-color: transparent;
   }
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.video-container video {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 75%;
+  max-height: auto;
+}
+
+.gallery-hero2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/static/gallery_banner.jpg") center/cover no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}

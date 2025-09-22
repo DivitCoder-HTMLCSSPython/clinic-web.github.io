@@ -7,9 +7,9 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Twilio credentials (add yours here)
-account_sid = ""
-auth_token = ""
-twilio_phone_number = ""
+account_sid = "ACaebaa14333941267e778a8898a10602b"
+auth_token = "a438c1c1b9747c538ba2717081db448b"
+twilio_phone_number = "+17853229067"
 
 client = Client(account_sid, auth_token)
 

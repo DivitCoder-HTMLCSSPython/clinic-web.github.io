@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rashmi Sinha's Clinic | Myths and Facts</title>
+</head>
+<link rel="stylesheet" href="/static/style.css">
+<body>
+    <header class="hero home-hero">
+        <h1>Myths and Facts</h1>
+        <p>Few myths you've probably heard of, with their truths</p>
+    </header>
+    <section class="content">
+        <div class="myth-card">
+            <h3>Myth: “Infertility is always the woman’s fault.”</h3>
+        </div>
+        <div class="fact-card">
+            <h3>Fact: Infertility can be due to male, female, or both partners’ health. It’s important to get both checked</h3>
+        </div>
+        <br>
+        <div class="myth-card">
+            <h3>Myth: “Periods should always be 28 days long.”</h3>
+        </div>
+        <div class="fact-card">
+            <h3>Fact: A healthy cycle can be between 21–35 days. It doesn’t have to be exactly 28 days.</h3>
+        </div>
+        <br>
+        <div class="myth-card">
+           <h3>Myth: “Endometriosis is just bad period pain.”</h3>
+        </div>
+        <div class="fact-card">
+            <h3>Fact: It’s a chronic condition that needs medical attention and can affect fertility too.</h3>
+        </div>
+        <br>
+        <div class="myth-card">
+            <h3>Myth: “Birth control pills make you infertile.”</h3>
+        </div>
+        <div class="fact-card">
+            <h3>Fact: Fertility usually returns once you stop taking the pills</h3>
+        </div>
+        <br>
+    <a href="/templates/Rs_FAQs.html">
+      <button type="button" class="btn">
+        <strong>Got more doubts? Check out our FAQs page.</strong>
+        <div id="container-stars"><div id="stars"></div></div>
+        <div id="glow"><div class="circle"></div><div class="circle"></div></div>
+      </button>
+    </a>
+    <a href="/templates/Rs_homepage.html">
+      <button type="button" class="btn">
+        <strong>Back to Home</strong>
+        <div id="container-stars"><div id="stars"></div></div>
+        <div id="glow"><div class="circle"></div><div class="circle"></div></div>
+      </button>
+    </a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Dr. Rashmi Sinha's Clinic | All rights Reserved</p>
+    </footer>
+    <a href="https://wa.me/918002147890?text=Hello%20Dr.%20Rashmi%20Sinha%2C%20I%20would%20like%20to%20book%20an%20appointment."
+     class="whatsapp-float"
+     target="_blank"
+     aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- Floating Call Button -->
+  <a href="tel:8002147890" class="call-float" aria-label="Call Dr. Rashmi Sinha’s Clinic">📞</a>
+
+  <!-- Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆</button>
+
+  <script>
+    // Show back-to-top button when scrolling
+    window.onscroll = function () {
+      let btn = document.getElementById("backToTop");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "flex";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>

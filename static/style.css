@@ -876,3 +876,39 @@ strong {
   padding: 120px 20px;
 padding-top: 50px; 
 }
+.myth-card {
+  justify-content: left;
+  text-align: justify;
+  padding: 20px 30px;
+  color: #ff00f2;
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+  background: rgb(5, 252, 235);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  min-width: 250px;
+}
+.fact-card {
+  justify-content: left;
+  text-align: justify;
+  padding: 20px 30px;
+  color: #00eaff;
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+  background: rgb(255, 12, 247);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  min-width: 250px;
+}
+.myth-card h3 {
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}

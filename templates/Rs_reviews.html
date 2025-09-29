@@ -46,73 +46,48 @@
   </section>
 
   <!-- Back Button -->
-  <div style="text-align:center; margin:30px;">
-    <a href="/templates/Rs_homepage.html" class="btn">⬅ Back to Home</a>
-  </div>
-
+    <a href="/templates/Rs_homepage.html">
+      <button type="button" class="btn">
+        <strong>Back to Home</strong>
+        <div id="container-stars"><div id="stars"></div></div>
+        <div id="glow"><div class="circle"></div><div class="circle"></div></div>
+      </button>
+    </a>
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Dr. Rashmi Sinha's Clinic | All Rights Reserved</p>
   </footer>
+  <a href="https://wa.me/918002147890?text=Hello%20Dr.%20Rashmi%20Sinha%2C%20I%20would%20like%20to%20book%20an%20appointment." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp">
+    💬
+  </a>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reviews & Testimonials | Dr. Rashmi Sinha's Clinic</title>
-  <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
+  <a href="tel:8002147890" 
+   class="call-float" 
+   aria-label="Call Dr. Rashmi Sinha’s Clinic">
+  📞
+</a>
 
-  <!-- Hero Section -->
-  <header class="hero home-hero">
-    <h1>What Our Patients Say</h1>
-    <p>Your trust means everything to us.</p>
-  </header>
+<button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆</button>
 
-  <!-- Image Banner -->
-  <section class="content">
-    <img src="/static/rashmi_sinha_reviews.jpg" alt="Patient Reviews" class="clinic-photo">
-  </section>
+<script>
+  // Show button when user scrolls down
+  window.onscroll = function() {
+    let btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
 
-  <!-- Reviews Section -->
-  <section class="content">
-    <h2>Reviews & Testimonials</h2>
-    <p>These are not just reviews — they are milestones on our journey of care.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
-        <p>"Dr. Rashmi Sinha is so kind and patient. She explained everything clearly and made me feel comfortable!"</p>
-        <p><em>- Priya, Dhanbad</em></p>
-      </div>
-
-      <div class="card">
-        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
-        <p>"The clinic is clean, modern, and very well-organized. I got an appointment quickly and was treated with care."</p>
-        <p><em>- Rajesh, Dhanbad</em></p>
-      </div>
-
-      <div class="card">
-        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
-        <p>"Professional service and friendly staff. I really appreciate the follow-up after my treatment."</p>
-        <p><em>- Anjali, Ranchi</em></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Back Button -->
-  <div style="text-align:center; margin:30px;">
-    <a href="/templates/Rs_homepage.html" class="btn">Back to Home</a>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Dr. Rashmi Sinha's Clinic | All Rights Reserved</p>
-  </footer>
+  // Smooth scroll to top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 
 </body>
 </html>

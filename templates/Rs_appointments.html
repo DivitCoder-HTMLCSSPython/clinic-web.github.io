@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
-    <header class="hero appointment-hero">
+    <header class="hero home-hero">
       <h1>Book Your Appointment</h1>
       <p>Quick, simple and hassle-free booking.</p>
     </header>
@@ -33,9 +33,41 @@
         <button type="submit">Book Appointment</button>
       </form>
     </section>
-
+    <a href="/templates/Rs_homepage.html">
+      <button type="button" class="btn">
+        <strong>Back to Home</div>
+        <div id="glow"><div class="circle"></div><div class="circle"></div></div>
+      </button>
+    </a>
     <footer>
       <p>&copy; 2025 Dr. Rashmi Sinha's Clinic | All Rights Reserved</p>
     </footer>
+    <a href="https://wa.me/918002147890?text=Hello%20Dr.%20Rashmi%20Sinha's%20Clinic%20,%20I%20would%20like%20to%20get%20some%20quick%20information."
+     class="whatsapp-float"
+     target="_blank"
+     aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- Floating Call Button -->
+  <a href="tel:8002147890" class="call-float" aria-label="Call Dr. Rashmi Sinha’s Clinic">📞</a>
+
+  <!-- Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆</button>
+
+  <script>
+    // Show back-to-top button when scrolling
+    window.onscroll = function () {
+      let btn = document.getElementById("backToTop");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "flex";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
   </body>
 </html>

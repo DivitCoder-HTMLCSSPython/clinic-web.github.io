@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rashmi Sinha’s Clinic | Patient Resources</title>
+</head>
+<link rel="stylesheet" href="/static/style.css">
+<body>
+    <header class="hero home-hero">
+        <h1>Patient Resources</h1>
+        <p>A few helpful websites</p>
+    </header>
+    <section class="patient-resources">
+    <section class="content">
+        <div class="patient-resources-card">
+            <h1>International Resources</h1>
+            <br>
+            <a href="https://www.who.int/health-topics/reproductive-health">
+                <button class="btn-12">
+                    <span>WHO Reproductive Guidelines</span>
+                </button>
+            </a>
+            <br>
+            <a href="https://www.mayoclinic.org/departments-centers/obstetrics-gynecology">
+                <button class="btn-12">
+                    <span>Mayo Clinic Gynae Page</span>
+                </button>
+            </a>
+            <br>
+            <a href="https://www.acog.org">
+                <button class="btn-12">
+                    <span>ACOG (American College of Obstetricians and Gynecologists)</span>
+                </button>
+            </a>
+            <br>
+            <a href="https://www.nhs.uk/pregnancy/">
+                <button class="btn-12">
+                    <span>NHS – Pregnancy & Women’s Health</span>
+                </button>
+            </a>
+            <br>
+            <br>
+            <h1>India-focused links</h1>
+            <br>
+            <a href="https://main.mohfw.gov.in/">
+                <button class="btn-12">
+                    <span>Ministry of Health and Family Welfare (MoHFW, India)</span>
+                </button>
+            </a>
+            <br>
+            <a href="https://nhm.gov.in/">
+                <button class="btn-12">
+                    <span>National Health Mission (Maternal & Child Health)</span>
+                </button>
+            </a>
+            <br>
+            <a href="https://www.fogsi.org/">
+                <button class="btn-12">
+                    <span>FICOG / FOGSI (Federation of Obstetric and Gynaecological Societies of India)</span>
+                </button>
+            </a>
+            <br>
+            <h1>Patient-friendly Links</h1>
+            <br>
+            <a href="https://medlineplus.gov/womenshealth.html">
+                <button class="btn-12">
+                    <span>MedlinePlus – Women’s Health</span>
+                </button>
+            </a>
+            <br>
+            <a href="https://my.clevelandclinic.org/departments/obgyn">
+                <button class="btn-12">
+                    <span>Cleveland Clinic – Obstetrics & Gynecology</span>
+                </button>
+            </a>
+            <br>
+        </div>
+    </section>
+    </section>
+        <a href="/templates/Rs_homepage.html">
+      <button type="button" class="btn">
+        <strong>Back to Home</strong>
+        <div id="container-stars"><div id="stars"></div></div>
+        <div id="glow"><div class="circle"></div><div class="circle"></div></div>
+      </button>
+    </a>
+    <footer>
+        <p>&copy; Dr. Rashmi Sinha's Clinic | All Rights Reserved</p>
+    </footer>
+    <a href="https://wa.me/918002147890?text=Hello%20Dr.%20Rashmi%20Sinha%2C%20I%20would%20like%20to%20book%20an%20appointment." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <a href="tel:8002147890" 
+   class="call-float" 
+   aria-label="Call Dr. Rashmi Sinha’s Clinic">
+  📞
+</a>
+
+<button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆</button>
+
+<script>
+  // Show button when user scrolls down
+  window.onscroll = function() {
+    let btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

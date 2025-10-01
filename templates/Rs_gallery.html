@@ -37,7 +37,13 @@
       </div>
     </section>
 
-    <a href="/templates/Rs_homepage.html" class="btn">Back to home</a>
+    <a href="/templates/Rs_homepage.html">
+      <button type="button" class="btn">
+        <strong>Back to Home</strong>
+        <div id="container-stars"><div id="stars"></div></div>
+        <div id="glow"><div class="circle"></div><div class="circle"></div></div>
+      </button>
+    </a>
 
     <footer>
       <p>&copy; 2025 Dr. Rashmi Sinha's Clinic | All Rights Reserved</p>
@@ -54,12 +60,23 @@
 
     <a href="tel:8002147890" class="call-float" aria-label="Call Clinic">📞</a>
 
-    <button
-      onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
-      class="back-to-top"
-      aria-label="Back to top"
-    >
-      ⬆
-    </button>
+   <button onclick="scrollToTop()" id="backToTop" title="Go to top">⬆</button>
+
+<script>
+  // Show button when user scrolls down
+  window.onscroll = function() {
+    let btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
   </body>
 </html>
